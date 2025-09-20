@@ -1,10 +1,14 @@
 # tests/test_calculadora.py
 import pytest
-from src.calculadora import somar, dividir
+from src.calculadora import somar, dividir, subtrair, multiplicar
 
 def test_somar():
     assert somar(2, 3) == 6
     assert somar(-1, 1) == 0
+
+def test_subtrair():
+    assert subtrair(10, 1) == 9
+    assert subtrair(-1, -1) == 0
 
 def test_dividir():
     assert dividir(10, 2) == 5
